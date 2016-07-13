@@ -23,12 +23,14 @@ import cn.bmob.v3.listener.SaveListener;
 public class MainActivity extends Activity {
     private int count;
     private Toast toast;
+    int i=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Bmob.initialize(this, "53b01f2474edfa7d5bb5debcf3a1ec59");
+
         findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
