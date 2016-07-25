@@ -40,7 +40,9 @@ public class MainActivity extends Activity {
 //        handler.postDelayed(runnable,1000);
     }
 
+
     private void show() {
+
         Dialog dialog = new Dialog(this,R.style.dm_full_screen_dialog);
         View view = LayoutInflater.from(this).inflate(R.layout.t_layout, null);
         dialog.setContentView(view);
