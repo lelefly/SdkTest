@@ -1,1 +1,1 @@
-include ':bomb'
+include ':bomb',':app'
