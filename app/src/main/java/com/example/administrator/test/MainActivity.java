@@ -38,6 +38,8 @@ public class MainActivity extends Activity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.i("testlog", "1");
+                Log.i("testlog", "2");
                 Log.i("testlog", "refresh");
                 Log.i("testlog", "refresh");
                 startActivity(new Intent(MainActivity.this, OtherActivity.class));
