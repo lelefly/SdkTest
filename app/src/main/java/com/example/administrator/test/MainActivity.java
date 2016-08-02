@@ -40,6 +40,8 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 Log.i("testlog", "main");
                 Log.i("testlog", "main");
+                Log.i("testlog", "ttttt");
+                Log.i("testlog", "tttttt");
                 startActivity(new Intent(MainActivity.this, OtherActivity.class));
             }
         });
