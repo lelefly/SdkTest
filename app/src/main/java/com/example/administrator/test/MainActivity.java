@@ -41,6 +41,7 @@ public class MainActivity extends Activity {
                 startActivity(new Intent(MainActivity.this, OtherActivity.class));
             }
         });
+
         swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.srl_main);
         recyclerView = (RecyclerView) findViewById(R.id.rv_main);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
