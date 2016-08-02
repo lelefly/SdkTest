@@ -23,26 +23,29 @@ import cn.bmob.v3.listener.SaveListener;
 public class MainActivity extends Activity {
     private int count;
     private Toast toast;
-    int i=0;
-
+    String s="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Bmob.initialize(this, "53b01f2474edfa7d5bb5debcf3a1ec59");
-
         findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                show();
+                cli(s);
+                Log.i("test",s+"--");
             }
         });
 //        handler.postDelayed(runnable,1000);
     }
 
+    private void cli(String s) {
+        s=s+"adhad";
+        Log.i("test",s);
+    }
+
 
     private void show() {
-
         Dialog dialog = new Dialog(this,R.style.dm_full_screen_dialog);
         View view = LayoutInflater.from(this).inflate(R.layout.t_layout, null);
         dialog.setContentView(view);
