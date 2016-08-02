@@ -38,8 +38,8 @@ public class MainActivity extends Activity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.i("testlog", "ttttt");
-                Log.i("testlog", "tttttt");
+                Log.i("testlog", "ffff");
+                Log.i("testlog", "fffff");
                 startActivity(new Intent(MainActivity.this, OtherActivity.class));
             }
         });
