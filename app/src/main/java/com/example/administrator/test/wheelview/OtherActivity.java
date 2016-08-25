@@ -23,6 +23,7 @@ public class OtherActivity extends Activity{
     private Button btn;
     private EditText et_comment;
     private View view;
+    private TextView tview;
     private int old;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,10 +46,7 @@ public class OtherActivity extends Activity{
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (false || check()) {
-                    int i = 1 & 2;
-                    Log.i("testlog", i + "");
-                }
+                tview.setVisibility(View.GONE);
 //                Log.i("testlog", et_comment.getTop() + "" + "---" + et_comment.getBottom());
                 InputMethodManager imm = (InputMethodManager) OtherActivity.this.getSystemService(Context.INPUT_METHOD_SERVICE);
 //                imm.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);
